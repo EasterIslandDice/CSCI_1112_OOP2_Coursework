@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+
+class Untitled {
+	public static void main(String[] args) throws IOException{
+		Random r = new Random();
+		int sum = 0;
+		
+		try(
+			DataOutputStream output = new DataOutputStream(new FileOutputStream("Exercise17_03.dat", true));
+		){
+			for(int i = 0; i < 100; i++)
+			output.writeInt(r.nextInt(10));
+		}
+		
+		try(
+			DataInputStream input = new DataInputStream(new FileInputStream("Exercise17_03.dat"))
+		){
+			for(int i = 0; i < 100; i++)
+			sum += input.readInt();
+		}
+		
+		System.out.println("The sum of the random integers in the file is " + sum);
+	}
+}
