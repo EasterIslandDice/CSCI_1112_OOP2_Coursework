@@ -24,7 +24,6 @@ public class Exercise19_09 {
     int currentMinIndex;
     
     for (int i = 0; i < list.size() - 1; i++) {
-      // Find the minimum in the ArrayList
       currentMin = list.get(i);
       currentMinIndex = i;
       
@@ -35,7 +34,6 @@ public class Exercise19_09 {
         }
       }
       
-      // Swap list.get(i) wtih list.get(currentMinIndex) if necessary;
       if (currentMinIndex != i) {
         list.set(currentMinIndex, list.get(i));
         list.set(i, currentMin);
