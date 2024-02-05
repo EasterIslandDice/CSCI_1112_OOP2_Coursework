@@ -1,0 +1,23 @@
+.ball {
+    -fx-fill: yellow;
+}
+
+.paddle {
+    -fx-fill: purple;
+}
+
+.brick.color1 {
+    -fx-fill: purple;
+}
+
+.brick.color2 {
+    -fx-fill: indigo;
+}
+
+.brick.color3 {
+    -fx-fill: green;
+}
+
+.brick.color4 {
+    -fx-fill: blue;
+}
