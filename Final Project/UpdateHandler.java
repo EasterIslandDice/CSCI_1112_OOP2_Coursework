@@ -124,7 +124,7 @@ public class UpdateHandler {
             if (ball.intersects(brick)) {
                 brickIterator.remove();
 
-                // note this is simplistic, would better to find out which side of the brick was hit and do the correct reflection for the side.
+                
                 ball.setVelocity(
                         reflect(ball.getVelocity(), DOWN_VECTOR)
                 );
