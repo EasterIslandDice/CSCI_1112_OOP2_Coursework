@@ -1,3 +1,4 @@
+import java.geometry.Point2D;
 import javafx.scene.shape.Shape;
 import javafx.scene.shape.Rectangle;
 import java.util.*;
